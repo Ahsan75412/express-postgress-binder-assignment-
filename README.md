@@ -2,7 +2,7 @@
 
 > A backend API for managing vehicles, customers, and bookings with role-based access control.
 
-**Live Deployment:** [Your Live URL Here](#)  
+**Live Deployment:** [https://travelmanagementsystemserver.vercel.app/](#)  
 **GitHub Repository:** [https://github.com/Ahsan75412/express-postgress-binder-assignment-](#)
 
 ---
@@ -27,7 +27,7 @@
 - **Authentication**: JWT (jsonwebtoken)
 - **Password Security**: bcrypt
 - **Environment Management**: dotenv
-- **Other Tools**: tsx for running TypeScript directly, Nodemon for development
+
 
 ---
 
@@ -120,31 +120,32 @@ Example: create booking, update vehicle, etc.
 
 API Endpoints Overview
 
-Module	Endpoint	Method	Access
-Auth	/auth/signup	POST	Public
-Auth	/auth/signin	POST	Public
-Vehicles	/vehicles	GET	Public
-Vehicles	/vehicles/:id	GET	Public
-Vehicles	/vehicles	POST	Admin
-Vehicles	/vehicles/:id	PUT	Admin
-Vehicles	/vehicles/:id	DELETE	Admin
-Users	/users	GET	Admin
-Users	/users/:id	PUT	Admin / Self
-Users	/users/:id	DELETE	Admin
-Bookings	/bookings	POST	Customer / Admin
-Bookings	/bookings	GET	Role-based
-Bookings	/bookings/:id	PUT	Customer / Admin
-Bookings	/bookings/:id	GET	Role-based
+| Module   | Endpoint      | Method | Access           |
+| -------- | ------------- | ------ | ---------------- |
+| Auth     | /auth/signup  | POST   | Public           |
+| Auth     | /auth/signin  | POST   | Public           |
+| Vehicles | /vehicles     | GET    | Public           |
+| Vehicles | /vehicles/:id | GET    | Public           |
+| Vehicles | /vehicles     | POST   | Admin            |
+| Vehicles | /vehicles/:id | PUT    | Admin            |
+| Vehicles | /vehicles/:id | DELETE | Admin            |
+| Users    | /users        | GET    | Admin            |
+| Users    | /users/:id    | PUT    | Admin / Self     |
+| Users    | /users/:id    | DELETE | Admin            |
+| Bookings | /bookings     | POST   | Customer / Admin |
+| Bookings | /bookings     | GET    | Role-based       |
+| Bookings | /bookings/:id | PUT    | Customer / Admin |
+| Bookings | /bookings/:id | GET    | Role-based       |
 
 
 ##Notes:
 
- Customer can only manage their own bookings.
+ **Customer can only manage their own bookings.**
 
- Admin can manage all vehicles, users, and bookings.
+ **Admin can manage all vehicles, users, and bookings.**
 
- Vehicle status updates automatically on booking/cancel/return.
+ **Vehicle status updates automatically on booking/cancel/return.**
 
- Use Postman or similar API client for testing.
+ **Use Postman or similar API client for testing.**
 
 

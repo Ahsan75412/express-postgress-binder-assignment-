@@ -1,5 +1,4 @@
 
-
 import express from "express";
 
 // Import routes
@@ -23,7 +22,7 @@ app.use("/api/v1/bookings", bookingRoutes);
 
 // Default route
 app.get("/", (_req, res) => {
-  res.send("🚗 Vehicle Rental System API is running!");
+  res.send("Vehicle Rental System API is running!");
 });
 
 export default app;

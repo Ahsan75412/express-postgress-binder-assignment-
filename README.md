@@ -58,9 +58,9 @@ JWT_SECRET= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 JWT_EXPIRES_IN=1d
 
 
-###Run the server
+##Run the server
 
-###npm run dev
+##npm run dev
 
 
 local Server:  http://localhost:5000/
